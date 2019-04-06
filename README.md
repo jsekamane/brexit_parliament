@@ -10,7 +10,7 @@ data/brexit_parliament.csv
 
 The dataset covers the Brexit agreements listed below. The data is primarily sourced from [data.parliament.uk](http://www.data.parliament.uk). While the share of a MP's constituency that voted _Leave_ in the 2016 Brexit referendum is sourced from the [House of Commons library](https://commonslibrary.parliament.uk/parliament-and-elections/elections-elections/brexit-votes-by-constituency/).
 
-| Type                 | Date       | Title                                                                                |
+| TYPE                 | DATE       | TITLE                                                                                |
 |:---------------------|:-----------|:-------------------------------------------------------------------------------------|
 | __Meaningful votes__ | 2019-03-29 | United Kingdom's withdrawal from the European Union                                  |
 |                      | 2019-03-12 | Section 13(1)(b) of the European Union (Withdrawal) Act main motion                  |

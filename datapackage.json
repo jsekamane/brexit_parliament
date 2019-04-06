@@ -1,100 +1,102 @@
-[
-	{
-		"name": "brexit_parliament",
-		"title": "Votes on Brexit agreements by UK parliament",
-		"description": "This dataset contains the complete voting history for each member of parliament on the various Brexit agreements. It is a collection of the binding ('meaningful') and non-binding ('indicative') votes in the House of Commons relating to the withdrawal of the United Kingdom from the European Union.",
-		"last_updated": "2019-04-06",
-		"version": "0.1",
-		"homepage": "https://github.com/jsekamane/brexit_parliament",
-		"keywords": [
-			"UK", 
-			"European Union", 
-			"brexit", 
-			"parliament", 
-			"house of commons",
-			"voting", 
-			"coalition", 
-			"politics", 
-			"political science", 
-			"political economics"
-		],
-		"license": [
-			{
-				"name": "OGL-UK-3.0",
-				"title": "Open Government Licence 3.0 (United Kingdom)",
-				"path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+{
+	"name": "brexit_parliament",
+	"title": "Votes on Brexit agreements by UK parliament",
+	"description": "This dataset contains the complete voting history for each member of parliament on the various Brexit agreements. It is a collection of the binding ('meaningful') and non-binding ('indicative') votes in the House of Commons relating to the withdrawal of the United Kingdom from the European Union.",
+	"last_updated": "2019-04-06",
+	"version": "0.1",
+	"homepage": "https://github.com/jsekamane/brexit_parliament",
+	"keywords": [
+		"UK", 
+		"European Union", 
+		"brexit", 
+		"parliament", 
+		"house of commons",
+		"voting", 
+		"coalition", 
+		"politics", 
+		"political science", 
+		"political economics"
+	],
+	"license": [
+		{
+			"name": "OGL-UK-3.0",
+			"title": "Open Government Licence 3.0 (United Kingdom)",
+			"path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+		}
+	],
+	"sources": [
+		{
+			"name": "data.paliament.uk",
+			"title": "data.paliament.uk",
+			"path": "http://www.data.parliament.uk"
+		},
+		{
+			"name": "House of Commons Library",
+			"title": "Brexit: votes by constituency",
+			"path": "https://commonslibrary.parliament.uk/parliament-and-elections/elections-elections/brexit-votes-by-constituency/"
+		}
+	],
+	"profile": "tabular-data-package",
+	"resources": [
+		{
+			"name": "brexit_parliament",
+			"title": "Votes on Brexit agreements by UK parliament",
+			"path": "data/brexit_parliament.csv",
+			"encoding": "utf-8",
+			"format": "csv",
+			"missingValues": [""],
+			"profile": "tabular-data-resource",
+			"schema": {
+				"fields": [
+					{
+						"name": "vote",
+						"type": "string"
+					},
+					{
+						"name": "vote_id",
+						"type": "string"
+					},
+					{
+						"name": "member_id",
+						"type": "string"
+					},
+					{
+						"name": "vote_title",
+						"type": "string"
+					},
+					{
+						"name": "vote_uin",
+						"type": "string"
+					},
+					{
+						"name": "vote_date",
+						"type": "date",
+						"format": "%Y-%m-%d"
+					},
+					{
+						"name": "vote_type",
+						"type": "string"
+					},
+					{
+						"name": "member",
+						"type": "string"
+					},
+					{
+						"name": "member_constituency",
+						"type": "string"
+					},
+					{
+						"name": "member_party",
+						"type": "string"
+					},
+					{
+						"name": "member_constituency_leave_vote",
+						"type": "number",
+						"decimalChar": ".",
+						"description": "Percentage that voted Leave in the member's constituency in the 2016 Brexit referendum (estimated)."
+					}
+				]
 			}
-		],
-		"sources": [
-			{
-				"name": "data.paliament.uk",
-				"path": "http://www.data.parliament.uk"
-			},
-			{
-				"name": "House of Commons Library",
-				"path": "https://commonslibrary.parliament.uk/parliament-and-elections/elections-elections/brexit-votes-by-constituency/"
-			}
-		],
-		"profile": "tabular-data-package",
-		"resources": [
-			{
-				"name": "brexit_parliament",
-				"path": "data/brexit_parliament.csv",
-				"encoding": "utf-8",
-				"format": "csv",
-				"missingValues": [""],
-				"schema": {
-					"fields": [
-						{
-							"name": "vote",
-							"type": "string"
-						},
-						{
-							"name": "vote_id",
-							"type": "string"
-						},
-						{
-							"name": "member_id",
-							"type": "string"
-						},
-						{
-							"name": "vote_title",
-							"type": "string"
-						},
-						{
-							"name": "vote_uin",
-							"type": "string"
-						},
-						{
-							"name": "vote_date",
-							"type": "date",
-							"format": "%Y-%m-%d"
-						},
-						{
-							"name": "vote_type",
-							"type": "string"
-						},
-						{
-							"name": "member",
-							"type": "string"
-						},
-						{
-							"name": "member_constituency",
-							"type": "string"
-						},
-						{
-							"name": "member_party",
-							"type": "string"
-						},
-						{
-							"name": "member_constituency_leave_vote",
-							"type": "number",
-							"decimalChar": ".",
-							"description": "Percentage that voted Leave in the member's constituency in the 2016 Brexit referendum (estimated)."
-						}
-					]
-				}
-			}
-		]
-	}
-]
+		}
+	]
+}
